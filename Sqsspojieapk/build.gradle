@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.lwhpj.upzippackage"
+        multiDexEnabled true
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 2
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+1
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    implementation 'com.android.support:support-v4:26.0.0-alpha1'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.github.Andy-13:ZbPermission:1.0.0'
+}

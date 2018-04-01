@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.lwhpj.upzippackage.MainActivity">
+
+    <Button
+        android:id="@+id/btn_unzip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="30dp"
+        android:background="#e4a80f"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="开始解压"
+        android:textColor="#ffffff" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="7.5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="285dp"
+        android:layout_below="@+id/img_3733top"
+        android:progressDrawable="@drawable/progressbar"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_3733top"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/topitem3733" />
+
+    <TextView
+        android:id="@+id/tv_shuoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_unzip"
+        android:layout_marginTop="65dp"
+        android:text="安装说明:" />
+
+    <TextView
+        android:id="@+id/tv_smcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_shuoming"
+        android:layout_marginTop="8dp"
+        android:text="1.点击开始解压后程序将自动解压游戏所需的安装包" />
+    <TextView
+        android:id="@+id/tv_smcontent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_shuoming"
+        android:layout_marginTop="36dp"
+        android:text="2.安装完成后，将自动安装游戏的主程序" />
+    <TextView
+        android:id="@+id/tv_smcontent3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_shuoming"
+        android:layout_marginTop="64dp"
+        android:text="3.游戏安装完成请卸载本程序" />
+    <TextView
+        android:id="@+id/tv_smcontent4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_shuoming"
+        android:layout_marginTop="92dp"
+        android:text="4.如果解析失败请检查是否已经授予权限，重新打开即可" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-275dp"
+        android:textSize="17sp"
+        android:text="解压进度:" />
+</RelativeLayout>
